@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang= "en">
+  <head>
+    <meta charset="utf-8">
+    
+     <meta name="viewport" content="width=device-width,inital-scale=1">
+        <link rel="icon" href="../assets/favicon-molcajete.png" type="image/gif" sizes="32x32">
+    <title>Order Salsa de Molcajete</title>
+    <link href="../project.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <header>
+    
+    <div class="nav-img">
+  <div class="container">
+    <nav class="navigation">
+        <ul>
+  <li><a href="homepage.html">Homepage - El Molcajete</a></li>
+  <li><a href="recipe.html">My Abuela's Receipe</a></li>
+  <li> <a href="about.html">About and Credits</a></li>
+        </ul>
+          <div class="dropdown">
+   <button class="dropbtn">More 
+      <i class="fa fa-caret-down"></i>
+    </button>
+  
+    <div class="dropdown-content">
+      <ul>
+  <li><a href="origins.html">Its Origins</a></li>
+  <li><a href="shapesandsizes.html">Its Shapes and Sizes</a></li>
+  <li><a href="special.html">Why the Molcajete is special</a></li>
+  <li><a href="dedication.html" class="border">Dedication</a></li>
+  
+</ul>
+    </div>
+          </div>
+    
+    </nav>
+  </div>
+    </div>
+    </header>
+    <div class="grid-container">
+      <aside class="item1" id="asideleft">
+        <p> Do you want to see this page in Spanish? Click <a href="es-homepage.html">here</a> </p> 
+      </aside> 
+      <article class="item2">
+        <h2>Order here NOW!</h2>
+  <form method="POST" action="https://formspree.io/nathy.reynosa@protonmail.com">
+    <fieldset>
+      <legend>Salsa</legend>
+    <p>
+      Choose your salsa (see table above):
+      <br>
+   
+        <input type="radio" id="original" name="type" value="original" required>
+        <label for="original">Original</label><br>
+        <input type="radio" id="chunky" name="type" value="chunky" required>
+        <label for="chunky">Chunky</label><br>
+        <input type="radio" id="smooth" name="type" value="smooth" required>
+        <label for="smooth">Smooth</label><br>
+     
+      </p>
+      </fieldset>
+      <fieldset>
+        <legend>Spicyness</legend>
+      <p>
+    <label for="spicylevel">Choose your spicy level (see table above):</label>
+    <br>
+    
+    <select name="spicylevel" id="spicylevel">
+      <option value="Hot">Hot</option>
+        <option value="Mild">Mild</option>
+        <option value="NoSpice">No Spice</option>
+    </select>
+      </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Meal Option</legend>
+        <p>
+        Choose your meal option (see table above):
+        </p>
+      <input type="checkbox" id="mealoption1" name="meal" value="chips">
+      <label for="mealoption1">Chips</label><br>
+      <input type="checkbox" id="mealoption2" name="meal" value="tamales">
+      <label for="mealoption2">Tamales</label><br>
+      <input type="checkbox" id="mealoption3" name="meal" value="tortillasdeharina">
+      <label for="mealoption3">Tortillas De Harina</label>
+      <br>
+      <input type="checkbox" id="mealoption4" name="meal" value="tortillas">
+      
+      <label for="mealoption4">Tortillas De Maíz</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Customize</legend>
+      <p> <label for="customizeorder">Customized order</label>
+        <br>
+        <textarea name="customizeorder" id="customizeorder" placeholder="Tell us what you want and will customize it just for you! Every custom order is made just before delivery"></textarea>
+    </p>
+      </fieldset>
+      <fieldset>
+        <legend>Number of orders</legend>
+    <p>
+      <label for="numberoforders">Number of orders:</label>
+      <input type="number" id="numberoforders" name="orders" min="1" max="20" required>
+    </p>
+      </fieldset>
+      <fieldset>
+        <legend>Information to fill out</legend>
+    <p> Send order to: </p>
+    <br>
+    <div>
+        <label for="name" id="order">Name</label>
+        <input required type="text" placeholder="Enter your name here" size="30" name="name" id="name">
+      </div>
+      <div>
+        <label for="address">Address</label>
+        <input required type="text" placeholder="Enter your address here" size="30" name="address" id="address">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter your email here" size="30" name="email" id="email" required>
+      </div>
+      </fieldset>
+
+
+     
+
+      <fieldset>
+        <legend>Submit/Reset</legend>
+      <div>
+        <input class="mysubmit" type="submit" value="Submit NOW!">
+        <input type="reset" value="Reset">
+      </div>
+      </fieldset>
+      
+
+    </form>
+      </article>
+      <aside class="item3" id="aside">
+        <p>Hello there!</p>
+      </aside>
+     <footer class="item4" id="footer">
+       &#169;2020, CS50A Class - by Nathalie Baladejo-Reynosa
+    </footer>
+     </div>
+     </body>
+</html>
